@@ -21,10 +21,13 @@ const Navbar = () => {
           <i className="fa-solid text-2xl fa-bars "></i>
         </button>
         <div className="  d-md-flex  d-none  h-full     gap-1    p-2 ">
-          <div className=" flex cursor-pointer   border-b   gap-2 px-1.5  py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+          <NavLink
+            to="/HomeeRenter/"
+            className=" flex cursor-pointer text-black  text-decoration-none  border-b   gap-2 px-1.5  py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+          >
             <i className="fa-regular fa-house"></i>
             <span>Home</span>
-          </div>
+          </NavLink>
           <div className="dropdown items-center ps-3 gap-1 flex bg-gray-300 hover:bg-gray-500 transition-all duration-500 border-b">
             <i className="fa-solid  fa-bars-progress"></i>
             <button
@@ -58,22 +61,31 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className=" flex cursor-pointer  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+          <NavLink
+            to="/HomeeRenter/categories"
+            className=" flex  text-black  text-decoration-none cursor-pointer  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+          >
             <i className="fa-regular fa-image"></i>
             <span>Gallery</span>
-          </div>
+          </NavLink>
           <div className=" flex cursor-pointer   border-b text-1xl gap-2 px-1 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
             <i className="fa-brands fa-atlassian"></i>
             <span>Services</span>
           </div>
-          <div className=" flex cursor-pointer  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+          <NavLink
+            to="/HomeeRenter/about"
+            className=" flex cursor-pointer  text-black  text-decoration-none  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+          >
             <i className="fa-solid fa-people-group"></i>
             <span>About</span>
-          </div>
-          <div className=" flex cursor-pointer   border-b text-1xl gap-2 px-1 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
+          </NavLink>
+          <NavLink
+            to="/HomeeRenter/contact"
+            className=" flex cursor-pointer  text-black  text-decoration-none  border-b text-1xl gap-2 px-1 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center"
+          >
             <i className="fa-regular fa-address-card"></i>
             <span>Contact</span>
-          </div>
+          </NavLink>
         </div>
         <div
           className="offcanvas   d-md-none  offcanvas-end"
@@ -93,10 +105,13 @@ const Navbar = () => {
             ></button>
           </div>
           <div className="offcanvas-body p-0  flex flex-col px-2 ">
-            <div className=" cursor-pointer flex w-full  border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+            <NavLink
+              to="/Homeerenter/"
+              className=" cursor-pointer  text-black  text-decoration-none flex w-full  border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+            >
               <i className="fa-regular fa-house"></i>
               <span>Home</span>
-            </div>
+            </NavLink>
             <div className="dropdown text-2xl items-center ps-3 gap-2 w-full flex bg-gray-300 hover:bg-gray-500 transition-all duration-500 border-b">
               <i className="fa-solid  fa-bars-progress"></i>
               <button
@@ -130,22 +145,31 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div className=" cursor-pointer flex w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+            <NavLink
+              to="/HomeeRenter/categories"
+              className=" cursor-pointer flex  text-black  text-decoration-none w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+            >
               <i className="fa-regular fa-image"></i>
               <span>Galleries</span>
-            </div>
+            </NavLink>
             <div className=" cursor-pointer flex w-full  border-b text-2xl gap-2 ps-3 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
               <i className="fa-brands fa-atlassian"></i>
               <span>Services</span>
             </div>
-            <div className=" cursor-pointer flex w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center">
+            <NavLink
+              to="/HomeeRenter/about"
+              className=" cursor-pointer  text-black  text-decoration-none flex w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
+            >
               <i className="fa-solid fa-people-group"></i>
               <span>About</span>
-            </div>
-            <div className=" cursor-pointer flex w-full  border-b text-2xl gap-2 ps-3 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
+            </NavLink>
+            <NavLink
+              to="/Homeerenter/contact"
+              className=" cursor-pointer  text-black  text-decoration-none flex w-full  border-b text-2xl gap-2 ps-3 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center"
+            >
               <i className="fa-regular fa-address-card"></i>
               <span>Contact</span>
-            </div>
+            </NavLink>
           </div>
         </div>
       </div>
