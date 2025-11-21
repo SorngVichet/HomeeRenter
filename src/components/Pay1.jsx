@@ -8,7 +8,7 @@ const Pay = () => {
   return (
     <div
       style={{ minHeight: "100vh" }}
-      className="  flex  px-2  flex-col relative mt-12   items-center "
+      className="  flex  px-2 pt-2  flex-col relative mt-12   items-center "
     >
       <div className=" w-full top-0 grid  relative  grid-cols-1 md:grid-cols-2 ">
         <div style={{ height: "200px" }} className=" relative">
@@ -230,9 +230,9 @@ const Pay = () => {
           </form>
         </div>
         <div className=" w-full border  ">
-          <h2 className=" bg-orange-400 shadow py-2 flex justify-start ps-3 text-white">
+          <div className=" text-2xl bg-orange-400 shadow py-2 flex justify-start ps-3 text-white">
             Booking Payment
-          </h2>
+          </div>
           <div className=" w-full d-flex flex-column gap-1 py-2  flex-lg-row">
             <div>The Way accepted!</div>
             <div className=" w-full flex gap-3 justify-center">
@@ -310,8 +310,53 @@ const Pay = () => {
             </div>
           </div>
         </div>
-        <div className=" border p-2">
-          <h3>More Option & Contant to Rent</h3>
+        <div className=" border w-full">
+          <div className=" text-2xl bg-orange-400 w-full text-white  py-2">
+            More Option & Contant to Rent
+          </div>
+          <div className=" bg-white   p-3">
+            If you don't want to pay by card, never mind you can contact us
+            directly to pay. And then you can pay full for it.
+          </div>
+          <div className=" flex flex-col  p-2">
+            <div className=" border-b bg-amber-300 text-xl py-1">
+              Assistants
+            </div>
+            <div className=" bg-gray-100 py-2 flex gap-4 justify-center text-3xl">
+              <i class="fa-brands cursor-pointer text-blue-600 fa-facebook"></i>
+              <i class="fa-brands cursor-pointer text-blue-500 fa-telegram"></i>
+              <i class="fa-brands cursor-pointer text-red-500 fa-google"></i>
+              <i class="fa-brands cursor-pointer text-green-500 fa-whatsapp"></i>
+            </div>
+
+            <div className=" mt-2 border items-center w-full flex py-3  text-white bg-blue-400 justify-between  ps-3 pe-7 text-xl">
+              <div>---- or come to our Office -----</div>
+              <i class="fa-solid hover:text-red-500 cursor-pointer text-red-600 text-6xl fa-location-dot  border-s-2 ps-3"></i>
+            </div>
+          </div>
+          <div className=" w-full flex pb-1 justify-center">
+            {" "}
+            <div className=" w-32 border-b"></div> <span className="">or</span>{" "}
+            <div className=" w-32 border-b"></div>
+          </div>
+          <div className="  bg-yellow-400 w-full border rounded-2xl  p-3 flex flex-col gap-1">
+            <div className="">
+              <div>Owner</div>
+              <div className=" font-bold">SORNG VICHET</div>
+            </div>
+            <div className=" py-0.5 bg-gray-300 w-full px-2  grid grid-cols-2">
+              <div className=" border-e flex justify-start ">Email </div>
+              sorngvichet168@gmail.com
+            </div>
+            <div className=" py-0.5 bg-gray-200 px-2 w-full grid grid-cols-2">
+              <div className=" border-e flex justify-start ">Phone </div>
+              <div>081981012</div>
+            </div>
+            <div className=" py-0.5 bg-gray-300 px-2 w-full grid grid-cols-2">
+              <div className=" border-e flex justify-start ">Telegram </div>
+              <div>081981012</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 const Service = () => {
   return (
     <div
+      id="servicepage"
       style={{ height: "100vh" }}
       className=" flex justify-center items-center w-full"
     >

@@ -1,13 +1,27 @@
 import React from "react";
 import img3 from "../assets/img3.jpg";
 import BodyofHomepage from "./BodyofHomepage";
+import bgpay from "../assets/Bgpayment.png";
 const Homepage = () => {
   return (
     <>
       <div
+        id="homepage"
         style={{ marginTop: "70px" }}
         className=" relative w-full  box-home  border"
       >
+        <div className=" w-full absolute z-10 transform rotate-180 h-full ">
+          <img src={bgpay} alt="" />
+        </div>
+        <div className=" z-20 flex items-end   py-3 justify-center h-full w-full absolute">
+          <a
+            href="#body"
+            style={{ fontSize: "20px", borderRadius: "5px" }}
+            className=" px-4 btn1    d-sm-none d-flex  text-white  fw-bold  text-decoration-none  border  md:px-3 md:py-2   py-1   bg-amber-400"
+          >
+            Get Start
+          </a>
+        </div>
         <img src={img3} alt="" className=" w-full" />
         <div className=" border p-3 lg:grid lg:grid-cols-2  lg:p-3   absolute top-0 right-0 w-full h-full ">
           <div className=" relative border d-none d-lg-flex p-3 items-center  justify-center gap-1 ">
@@ -77,22 +91,22 @@ const Homepage = () => {
             </div>
           </div>
           <div
-            className=" p-2
-         b1 text-blue-500 flex flex-col items-center justify-center  border    w-full h-full "
+            className=" px-2
+         b1 text-blue-500   justify-start pb-2  flex flex-col items-center sm:justify-center  border    w-full h-full "
           >
-            <span className=" lg:text-5xl md:text-4xl fw-bold text-3xl ">
+            <span className=" text-orange-400 lg:text-5xl md:text-4xl fw-bold text-3xl ">
               Welcome To Dream House Website
             </span>
             <span className=" md:text-xl text-yellow-600">
               Modern & Luxury Home for Specail!
             </span>
-            <p className=" text-red-500">
+            <p className="  text-white">
               Here are a lots of kind of home, apartment and vila for you rent!
             </p>
             <a
               href="#body"
               style={{ fontSize: "20px", borderRadius: "5px" }}
-              className=" text-white text-decoration-none  border  md:px-3 md:py-2 px-2 py-1 bg-amber-500"
+              className=" px-4  d-sm-flex d-none text-white  fw-bold  text-decoration-none  border  md:px-3 md:py-2   py-1   bg-amber-400"
             >
               Get Start
             </a>

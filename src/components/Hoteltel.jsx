@@ -3,6 +3,7 @@ import React from "react";
 const Hotel = () => {
   return (
     <div
+      id="hotelpage"
       style={{ height: "100vh" }}
       className=" flex justify-center items-center w-full"
     >

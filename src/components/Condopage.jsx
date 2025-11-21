@@ -3,6 +3,7 @@ import React from "react";
 const Condopage = () => {
   return (
     <div
+      id="condopage"
       style={{ height: "100vh" }}
       className=" flex justify-center items-center w-full"
     >

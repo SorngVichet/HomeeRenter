@@ -3,13 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 import LOGO4 from "../assets/LOGO4.png";
 const Navbar = () => {
   return (
-    <nav className="navbar bg-body-tertiary  p-0 lg:pr-20 shadow-2xl fixed-top">
+    <nav className="navbar  border-b-4  border-t-4  border-orange-400  bg-body-tertiary  p-0 lg:pr-20 shadow-2xl fixed-top">
       <div className=" py-2 px-3 w-full flex justify-between items-center   ">
         <div className="navbar-brand w-60 flex gap-3  items-center">
           <img className="" src={LOGO4} style={{ height: "50px" }} alt="" />
-          <span className=" border-b font-bold text-2xl lg:text-3xl text-blue-700 ">
-            Dream Home
-          </span>
+          <p className=" border-b-2 pt-0  lg:pt-2 font-bold text-2xl flex gap-2 lg:text-3xl text-blue-700 ">
+            <span className=" text-orange-400">Dream</span>
+            <span>Home</span>
+          </p>
         </div>
         <button
           className="navbar-toggler d-md-none border-0 "

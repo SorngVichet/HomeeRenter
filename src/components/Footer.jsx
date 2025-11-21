@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -44,21 +44,33 @@ const Footer = () => {
               <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <h5>Quick Links</h5>
                 <div className="footer-links flex flex-col ">
-                  <a href="#" className=" text-decoration-none">
+                  <NavLink to="/HomeeRenter" className=" text-decoration-none">
                     Home
-                  </a>
-                  <a href="#" className=" text-decoration-none">
+                  </NavLink>
+                  <NavLink
+                    to="/HomeeRenter/gallery"
+                    className=" text-decoration-none"
+                  >
                     Cart
-                  </a>
-                  <a href="#" className=" text-decoration-none">
-                    Menu
-                  </a>
-                  <a href="#" className=" text-decoration-none">
-                    App
-                  </a>
-                  <a href="#" className=" text-decoration-none">
-                    Contact Us
-                  </a>
+                  </NavLink>
+                  <NavLink
+                    to="/HomeeRenter/service"
+                    className=" text-decoration-none"
+                  >
+                    Service
+                  </NavLink>
+                  <NavLink
+                    to="/Homeerenter/about"
+                    className=" text-decoration-none"
+                  >
+                    About
+                  </NavLink>
+                  <NavLink
+                    to="/HomeeRenter/contact"
+                    className=" text-decoration-none"
+                  >
+                    Contact
+                  </NavLink>
                 </div>
               </div>
 
