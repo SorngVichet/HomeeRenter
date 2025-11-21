@@ -1,14 +1,14 @@
 import React from "react";
 
-const Gallerypage = () => {
+const Apartmentpage = () => {
   return (
     <div
       style={{ height: "100vh" }}
       className=" flex justify-center items-center w-full"
     >
-      <h1>Gallery </h1>
+      <h1>Apartments Page</h1>
     </div>
   );
 };
 
-export default Gallerypage;
+export default Apartmentpage;

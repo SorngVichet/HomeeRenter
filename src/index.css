@@ -7,3 +7,6 @@
 .b1 {
   backdrop-filter: blur(3px);
 }
+.h-b1 {
+  background: rgb(252, 252, 105, 0.5);
+}

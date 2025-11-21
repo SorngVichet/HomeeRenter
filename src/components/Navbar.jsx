@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import LOGO4 from "../assets/LOGO4.png";
 const Navbar = () => {
   return (
-    <nav className="navbar bg-body-tertiary  lg:pr-20 shadow-2xl fixed-top">
-      <div className="container-fluid">
-        <div className="navbar-brand w-60 flex gap-2 items-center">
-          <i className="fa-solid text-indigo-600 fa-umbrella-beach fs-2"></i>
-          <span className=" font-bold text-3xl text-indigo-500 ">
-            Dream House
+    <nav className="navbar bg-body-tertiary  p-0 lg:pr-20 shadow-2xl fixed-top">
+      <div className=" py-2 px-3 w-full flex justify-between items-center   ">
+        <div className="navbar-brand w-60 flex gap-3  items-center">
+          <img className="" src={LOGO4} style={{ height: "50px" }} alt="" />
+          <span className=" border-b font-bold text-2xl lg:text-3xl text-blue-700 ">
+            Dream Home
           </span>
         </div>
         <button
@@ -20,7 +21,7 @@ const Navbar = () => {
         >
           <i className="fa-solid text-2xl fa-bars "></i>
         </button>
-        <div className="  d-md-flex  d-none  h-full     gap-1    p-2 ">
+        <div className="  d-md-flex  d-none  h-full   md:text-xs lg:text-lg   gap-1    p-2 ">
           <NavLink
             to="/HomeeRenter/"
             className=" flex cursor-pointer text-black  text-decoration-none  border-b   gap-2 px-1.5  py-2 hover:bg-gray-200 transition-all duration-500 items-center"
@@ -39,39 +40,54 @@ const Navbar = () => {
               Properties
             </button>
             <ul className="dropdown-menu rounded-0">
-              <li className=" bg-amber-200">
+              <NavLink
+                to="/HomeeRenter/hotel"
+                className=" text-decoration-none bg-amber-200"
+              >
                 <a className="dropdown-item" href="#">
                   Hoteles
                 </a>
-              </li>
-              <li>
+              </NavLink>
+              <NavLink
+                to="/HomeeRenter/villa"
+                className=" text-decoration-none text-black"
+              >
                 <a className="dropdown-item" href="#">
                   Villas
                 </a>
-              </li>
-              <li className=" bg-amber-200">
+              </NavLink>
+              <NavLink
+                to="/HomeeRenter/condo"
+                className=" text-decoration-none text-black bg-amber-200"
+              >
                 <a className="dropdown-item" href="#">
                   Condos
                 </a>
-              </li>
-              <li>
+              </NavLink>
+              <NavLink
+                to="/HomeeRenter/apartment"
+                className=" text-decoration-none text-black "
+              >
                 <a className="dropdown-item" href="#">
                   Apartements
                 </a>
-              </li>
+              </NavLink>
             </ul>
           </div>
           <NavLink
-            to="/HomeeRenter/categories"
+            to="/HomeeRenter/gallery"
             className=" flex  text-black  text-decoration-none cursor-pointer  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
           >
             <i className="fa-regular fa-image"></i>
             <span>Gallery</span>
           </NavLink>
-          <div className=" flex cursor-pointer   border-b text-1xl gap-2 px-1 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
+          <NavLink
+            to="/HomeeRenter/service"
+            className=" flex cursor-pointer text-decoration-none text-black   border-b text-1xl gap-2 px-1 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center"
+          >
             <i className="fa-brands fa-atlassian"></i>
             <span>Services</span>
-          </div>
+          </NavLink>
           <NavLink
             to="/HomeeRenter/about"
             className=" flex cursor-pointer  text-black  text-decoration-none  border-b text-1xl gap-2 px-1 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
@@ -123,39 +139,54 @@ const Navbar = () => {
                 Properties
               </button>
               <ul className="dropdown-menu rounded-0">
-                <li className=" bg-amber-200">
+                <NavLink
+                  to="/HomeeRenter/hotel"
+                  className=" text-decoration-none text-black bg-amber-200"
+                >
                   <a className="dropdown-item" href="#">
                     Hoteles
                   </a>
-                </li>
-                <li>
+                </NavLink>
+                <NavLink
+                  to="/HomeeRenter/villa"
+                  className=" text-decoration-none text-black"
+                >
                   <a className="dropdown-item" href="#">
                     Villas
                   </a>
-                </li>
-                <li className=" bg-amber-200">
+                </NavLink>
+                <NavLink
+                  to="/HomeeRenter/condo"
+                  className="  text-decoration-none text-black bg-amber-200"
+                >
                   <a className="dropdown-item" href="#">
                     Condos
                   </a>
-                </li>
-                <li>
+                </NavLink>
+                <NavLink
+                  to="/HomeeRenter/apartment"
+                  className=" text-decoration-none text-black "
+                >
                   <a className="dropdown-item" href="#">
                     Apartements
                   </a>
-                </li>
+                </NavLink>
               </ul>
             </div>
             <NavLink
-              to="/HomeeRenter/categories"
+              to="/HomeeRenter/gallery"
               className=" cursor-pointer flex  text-black  text-decoration-none w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
             >
               <i className="fa-regular fa-image"></i>
               <span>Galleries</span>
             </NavLink>
-            <div className=" cursor-pointer flex w-full  border-b text-2xl gap-2 ps-3 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center">
+            <NavLink
+              to="/HomeeRenter/service"
+              className=" cursor-pointer text-decoration-none text-black flex w-full  border-b text-2xl gap-2 ps-3 py-2 bg-gray-300 hover:bg-gray-500 transition-all duration-500 items-center"
+            >
               <i className="fa-brands fa-atlassian"></i>
               <span>Services</span>
-            </div>
+            </NavLink>
             <NavLink
               to="/HomeeRenter/about"
               className=" cursor-pointer  text-black  text-decoration-none flex w-full border-b text-2xl gap-2 ps-3 py-2 hover:bg-gray-200 transition-all duration-500 items-center"
